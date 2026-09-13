@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Welcome Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1f22 0%, #2b2d31 100%);
+            color: #dbdee1;
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #313338;
+            border-radius: 12px;
+            padding: 50px 60px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid #1e1f22;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #5865f2;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            color: #5865f2;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            border-left: 4px solid #5865f2;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+            color: #dbdee1;
+        }
+
+        ul {
+            margin: 10px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+            color: #dbdee1;
+        }
+
+        li::marker {
+            color: #5865f2;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0 20px 0;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            border: 1px solid #4e5058;
+            padding: 10px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #5865f2;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #2b2d31;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #313338;
+        }
+
+        .emoji {
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy — Welcome Bot</h1>
+
+        <h2>General Provisions</h2>
+        <p>1.1. This Privacy Policy (hereinafter — the “Policy”) describes what data the Discord bot “Welcome Bot” (hereinafter — the “Bot”) collects, how it is used, stored, and protected.</p>
+        <p>1.2. By using the Bot or adding it to a server, you agree to this Policy.</p>
+        <p>1.3. If you do not agree with the Policy, stop using the Bot and remove it from your server.</p>
+        <p>1.4. This Policy is drafted in accordance with:</p>
+        <ul>
+            <li>Discord Privacy Policy;</li>
+            <li>EU General Data Protection Regulation (GDPR) — for users from the EU;</li>
+            <li>Federal Law No. 152-FZ “On Personal Data” — for users from the Russian Federation.</li>
+        </ul>
+
+        <h2>What Data the Bot Collects</h2>
+        <p>The Bot collects the minimum amount of data necessary for the new member welcome feature to work.</p>
+
+        <p><strong>2.1. Data Received Automatically from Discord</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data type</th>
+                    <th>Why it is needed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>User ID</td>
+                    <td>Mention in the welcome</td>
+                </tr>
+                <tr>
+                    <td>Username (username, display name)</td>
+                    <td>Address in the message</td>
+                </tr>
+                <tr>
+                    <td>Avatar URL</td>
+                    <td>Display in the embed message</td>
+                </tr>
+                <tr>
+                    <td>Guild ID</td>
+                    <td>Determining where to send the welcome</td>
+                </tr>
+                <tr>
+                    <td>Channel ID</td>
+                    <td>Where to send the welcome</td>
+                </tr>
+                <tr>
+                    <td>Server join date</td>
+                    <td>Generating the welcome text</td>
+                </tr>
+                <tr>
+                    <td>Number of server members</td>
+                    <td>Displaying “you are our Nth member”</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>2.2. Data the Bot Does NOT Collect</strong></p>
+        <ul>
+            <li><span class="emoji">❌</span> Content of direct messages (DMs)</li>
+            <li><span class="emoji">❌</span> Content of messages on servers</li>
+            <li><span class="emoji">❌</span> Email, phone number, Discord password</li>
+            <li><span class="emoji">❌</span> Payment data</li>
+            <li><span class="emoji">❌</span> Voice data</li>
+            <li><span class="emoji">❌</span> User IP addresses</li>
+            <li><span class="emoji">❌</span> Data about other servers except the one where the Bot is installed</li>
+        </ul>
+
+        <h2>How Data Is Used</h2>
+        <p>3.1. Data is used exclusively for:</p>
+        <ul>
+            <li>generating and sending the welcome message;</li>
+            <li>displaying the new member’s nickname and avatar;</li>
+            <li>server settings functioning (for example, the selected welcome channel).</li>
+        </ul>
+        <p>3.2. Data is NOT used for:</p>
+        <ul>
+            <li>advertising and marketing;</li>
+            <li>user profiling;</li>
+            <li>training third-party models;</li>
+            <li>selling or transferring to third parties.</li>
+        </ul>
+
+        <h2>Data Storage</h2>
+        <p>4.1. The Bot does not maintain a permanent user database.</p>
+        <p>4.2. Temporary storage:</p>
+        <ul>
+            <li>data from the on_member_join event is processed at the time of the event and is not saved after the message is sent;</li>
+            <li>server settings (welcome channel ID) may be stored as a configuration file if this is provided by the functionality.</li>
+        </ul>
+        <p>4.3. If the Bot uses a database (for example, SQLite), it contains only server and channel IDs — without users’ personal data.</p>
+        <p>4.4. Data is deleted:</p>
+        <ul>
+            <li>automatically when the Bot is removed from a server;</li>
+            <li>at the request of the server owner;</li>
+            <li>at the request of the user themselves (see section 7).</li>
+        </ul>
+
+        <h2>Transfer of Data to Third Parties</h2>
+        <p>5.1. The Bot does not transfer data to third parties, except in the following cases:</p>
+        <ul>
+            <li>Discord Inc. — since the Bot operates through the official Discord API, all data is transmitted through Discord’s secure channels;</li>
+            <li>Hosting provider — if the Bot is hosted on a server (for example, a VPS) where configuration files are stored. The provider does not have access to the content of the data;</li>
+            <li>Legal requirements — if an official request is received from authorized bodies.</li>
+        </ul>
+        <p>5.2. The Bot does not sell or rent out data.</p>
+
+        <h2>Security</h2>
+        <p>6.1. The following protection measures are taken:</p>
+        <ul>
+            <li>data transmission via HTTPS/WSS;</li>
+            <li>storage of the Bot token in a secure environment (environment variables);</li>
+            <li>limiting the Bot’s permissions to the necessary minimum (Send Messages, Embed Links, Attach Files);</li>
+            <li>regular updating of libraries.</li>
+        </ul>
+        <p>6.2. Despite protection measures, no method of transmitting data over the internet is 100% secure. The author cannot guarantee absolute protection.</p>
+
+        <h2>User Rights</h2>
+        <p>In accordance with the GDPR and 152-FZ, you have the right:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Right</th>
+                    <th>What it means</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Right of access</td>
+                    <td>To find out what data of yours the Bot processes</td>
+                </tr>
+                <tr>
+                    <td>Right to rectification</td>
+                    <td>To demand correction of inaccurate data</td>
+                </tr>
+                <tr>
+                    <td>Right to erasure</td>
+                    <td>To demand deletion of your data</td>
+                </tr>
+                <tr>
+                    <td>Right to restriction</td>
+                    <td>To restrict processing of your data</td>
+                </tr>
+                <tr>
+                    <td>Right to object</td>
+                    <td>To object to processing</td>
+                </tr>
+                <tr>
+                    <td>Right to portability</td>
+                    <td>To receive a copy of your data</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To exercise any of these rights, write to the contact specified in section 10.</p>
+        <p>A response is provided within 30 days.</p>
+
+        <h2>Children’s Data</h2>
+        <p>8.1. The Bot is not intended for use by persons under 13 years of age (or another minimum age established by the legislation of your country and Discord).</p>
+        <p>8.2. The author does not knowingly collect children’s data. If such a fact becomes known, the data will be deleted immediately.</p>
+        <p>8.3. If you are a parent and believe that your child has provided data to the Bot, contact the author.</p>
+
+        <h2>Changes to the Policy</h2>
+        <p>9.1. The author has the right to change this Policy.</p>
+        <p>9.2. In case of material changes:</p>
+        <ul>
+            <li>the date at the beginning of the document is updated;</li>
+            <li>a notification is published in the support channel or in the Bot’s repository.</li>
+        </ul>
+        <p>9.3. Continued use of the Bot after changes means agreement with the new version.</p>
+
+        <h2>Contacts</h2>
+        <p>For all questions related to data processing:</p>
+        <ul>
+            <li>Discord: your_tag#0000 or @username</li>
+            <li>Email: your_email@example.com</li>
+            <li>GitHub: https://github.com/your_username/your_repository</li>
+        </ul>
+
+        <h2>Consent</h2>
+        <p>By using the Bot, you confirm that:</p>
+        <ul>
+            <li><span class="emoji">✅</span> you have read this Policy;</li>
+            <li><span class="emoji">✅</span> you understand what data is collected and why;</li>
+            <li><span class="emoji">✅</span> you agree to the terms of data processing.</li>
+        </ul>
+    </div>
+</body>
+</html>
