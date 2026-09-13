@@ -1,153 +1,145 @@
-1. Общие положения
-1.1. Настоящая Политика конфиденциальности (далее — «Политика») описывает, какие данные собирает Discord-бот «Welcome Bot» (далее — «Бот»), как они используются, хранятся и защищаются.
+General Provisions
+1.1. This Privacy Policy (hereinafter — the “Policy”) describes what data the Discord bot “Welcome Bot” (hereinafter — the “Bot”) collects, how it is used, stored, and protected.
 
-1.2. Используя Бота или добавляя его на сервер, вы соглашаетесь с настоящей Политикой.
+1.2. By using the Bot or adding it to a server, you agree to this Policy.
 
-1.3. Если вы не согласны с Политикой — прекратите использование Бота и удалите его со своего сервера.
+1.3. If you do not agree with the Policy, stop using the Bot and remove it from your server.
 
-1.4. Настоящая Политика составлена в соответствии с:
+1.4. This Policy is drafted in accordance with:
 
-Политикой конфиденциальности Discord;
+Discord Privacy Policy;
 
-Общим регламентом ЕС по защите данных (GDPR) — для пользователей из ЕС;
+EU General Data Protection Regulation (GDPR) — for users from the EU;
 
-Федеральным законом №152-ФЗ «О персональных данных» — для пользователей из РФ.
+Federal Law No. 152-FZ “On Personal Data” — for users from the Russian Federation.
 
-2. Какие данные собирает Бот
-Бот собирает минимальный объём данных, необходимый для работы функции приветствия новых участников.
+What Data the Bot Collects
+The Bot collects the minimum amount of data necessary for the new member welcome feature to work.
 
-2.1. Данные, получаемые автоматически от Discord
-Тип данных	Зачем нужны
-ID пользователя (User ID)	Упоминание в приветствии
-Имя пользователя (username, display name)	Обращение в сообщении
-URL аватара	Отображение в embed-сообщении
-ID сервера (Guild ID)	Определение, куда отправлять приветствие
-ID канала (Channel ID)	Куда отправлять приветствие
-Дата присоединения к серверу	Формирование приветственного текста
-Количество участников сервера	Отображение «ты наш N-й участник»
-2.2. Данные, которые Бот НЕ собирает
-❌ Содержимое личных сообщений (DM)
+2.1. Data Received Automatically from Discord
 
-❌ Содержимое сообщений на серверах
+Data type	Why it is needed
+User ID	Mention in the welcome
+Username (username, display name)	Address in the message
+Avatar URL	Display in the embed message
+Guild ID	Determining where to send the welcome
+Channel ID	Where to send the welcome
+Server join date	Generating the welcome text
+Number of server members	Displaying “you are our Nth member”
+2.2. Data the Bot Does NOT Collect
 
-❌ Email, номер телефона, пароль Discord
+❌ Content of direct messages (DMs)
+❌ Content of messages on servers
+❌ Email, phone number, Discord password
+❌ Payment data
+❌ Voice data
+❌ User IP addresses
+❌ Data about other servers except the one where the Bot is installed
 
-❌ Платёжные данные
+How Data Is Used
+3.1. Data is used exclusively for:
 
-❌ Голосовые данные
+generating and sending the welcome message;
 
-❌ IP-адреса пользователей
+displaying the new member’s nickname and avatar;
 
-❌ Данные о других серверах, кроме того, где установлен Бот
+server settings functioning (for example, the selected welcome channel).
 
-3. Как используются данные
-3.1. Данные используются исключительно для:
+3.2. Data is NOT used for:
 
-формирования и отправки приветственного сообщения;
+advertising and marketing;
 
-отображения ника и аватарки нового участника;
+user profiling;
 
-работы настроек сервера (например, выбранный канал приветствия).
+training third-party models;
 
-3.2. Данные НЕ используются для:
+selling or transferring to third parties.
 
-рекламы и маркетинга;
+Data Storage
+4.1. The Bot does not maintain a permanent user database.
 
-профилирования пользователей;
+4.2. Temporary storage:
 
-обучения сторонних моделей;
+data from the on_member_join event is processed at the time of the event and is not saved after the message is sent;
 
-продажи или передачи третьим лицам.
+server settings (welcome channel ID) may be stored as a configuration file if this is provided by the functionality.
 
-4. Хранение данных
-4.1. Бот не хранит постоянную базу данных пользователей.
+4.3. If the Bot uses a database (for example, SQLite), it contains only server and channel IDs — without users’ personal data.
 
-4.2. Временное хранение:
+4.4. Data is deleted:
 
-данные из события on_member_join обрабатываются в момент события и не сохраняются после отправки сообщения;
+automatically when the Bot is removed from a server;
 
-настройки сервера (ID канала приветствия) могут храниться в виде конфигурационного файла, если это предусмотрено функционалом.
+at the request of the server owner;
 
-4.3. Если Бот использует базу данных (например, SQLite), она содержит только ID серверов и каналов — без персональных данных пользователей.
+at the request of the user themselves (see section 7).
 
-4.4. Данные удаляются:
+Transfer of Data to Third Parties
+5.1. The Bot does not transfer data to third parties, except in the following cases:
 
-автоматически при удалении Бота с сервера;
+Discord Inc. — since the Bot operates through the official Discord API, all data is transmitted through Discord’s secure channels;
 
-по запросу владельца сервера;
+Hosting provider — if the Bot is hosted on a server (for example, a VPS) where configuration files are stored. The provider does not have access to the content of the data;
 
-по запросу самого пользователя (см. раздел 7).
+Legal requirements — if an official request is received from authorized bodies.
 
-5. Передача данных третьим лицам
-5.1. Бот не передаёт данные третьим лицам, за исключением случаев:
+5.2. The Bot does not sell or rent out data.
 
-Discord Inc. — так как Бот работает через официальное API Discord, все данные передаются по защищённым каналам Discord;
+Security
+6.1. The following protection measures are taken:
 
-Хостинг-провайдер — если Бот размещён на сервере (например, VPS), где хранятся конфигурационные файлы. Провайдер не имеет доступа к содержимому данных;
+data transmission via HTTPS/WSS;
 
-Требования закона — если поступит официальный запрос от уполномоченных органов.
+storage of the Bot token in a secure environment (environment variables);
 
-5.2. Бот не продаёт и не сдаёт в аренду данные.
+limiting the Bot’s permissions to the necessary minimum (Send Messages, Embed Links, Attach Files);
 
-6. Безопасность
-6.1. Принимаются следующие меры защиты:
+regular updating of libraries.
 
-передача данных через HTTPS/WSS;
+6.2. Despite protection measures, no method of transmitting data over the internet is 100% secure. The author cannot guarantee absolute protection.
 
-хранение токена Бота в защищённой среде (переменные окружения);
+User Rights
+In accordance with the GDPR and 152-FZ, you have the right:
 
-ограничение прав Бота до необходимого минимума (Send Messages, Embed Links, Attach Files);
+Right	What it means
+Right of access	To find out what data of yours the Bot processes
+Right to rectification	To demand correction of inaccurate data
+Right to erasure	To demand deletion of your data
+Right to restriction	To restrict processing of your data
+Right to object	To object to processing
+Right to portability	To receive a copy of your data
+To exercise any of these rights, write to the contact specified in section 10.
 
-регулярное обновление библиотек.
+A response is provided within 30 days.
 
-6.2. Несмотря на меры защиты, ни один метод передачи данных через интернет не является на 100% безопасным. Автор не может гарантировать абсолютную защиту.
+Children’s Data
+8.1. The Bot is not intended for use by persons under 13 years of age (or another minimum age established by the legislation of your country and Discord).
 
-7. Права пользователя
-В соответствии с GDPR и 152-ФЗ, вы имеете право:
+8.2. The author does not knowingly collect children’s data. If such a fact becomes known, the data will be deleted immediately.
 
-Право	Что это значит
-Право на доступ	Узнать, какие ваши данные обрабатывает Бот
-Право на исправление	Требовать исправления неточных данных
-Право на удаление	Требовать удаления ваших данных
-Право на ограничение	Ограничить обработку ваших данных
-Право на возражение	Возразить против обработки
-Право на переносимость	Получить копию своих данных
-Для реализации любого из прав напишите на контакт, указанный в разделе 10.
+8.3. If you are a parent and believe that your child has provided data to the Bot, contact the author.
 
-Ответ предоставляется в течение 30 дней.
+Changes to the Policy
+9.1. The author has the right to change this Policy.
 
-8. Данные детей
-8.1. Бот не предназначен для использования лицами младше 13 лет (или иного минимального возраста, установленного законодательством вашей страны и Discord).
+9.2. In case of material changes:
 
-8.2. Автор сознательно не собирает данные детей. Если станет известно о таком факте — данные будут незамедлительно удалены.
+the date at the beginning of the document is updated;
 
-8.3. Если вы родитель и считаете, что ваш ребёнок передал данные Боту — свяжитесь с автором.
+a notification is published in the support channel or in the Bot’s repository.
 
-9. Изменения в Политике
-9.1. Автор вправе изменять настоящую Политику.
+9.3. Continued use of the Bot after changes means agreement with the new version.
 
-9.2. При существенных изменениях:
+Contacts
+For all questions related to data processing:
 
-обновляется дата в начале документа;
+Discord: your_tag#0000 or @username
+Email: your_email@example.com
+GitHub: https://github.com/your_username/your_repository
 
-уведомление публикуется в канале поддержки или в репозитории Бота.
+Consent
+By using the Bot, you confirm that:
 
-9.3. Продолжение использования Бота после изменений означает согласие с новой редакцией.
-
-10. Контакты
-По всем вопросам, связанным с обработкой данных:
-
-Discord: твой_тег#0000 или @username
-
-Email: твой_email@example.com
-
-GitHub: https://github.com/твой_ник/твой_репозиторий
-
-11. Согласие
-Используя Бота, вы подтверждаете, что:
-
-✅ прочитали настоящую Политику;
-
-✅ понимаете, какие данные собираются и зачем;
-
-✅ согласны с условиями обработки данных.
+✅ you have read this Policy;
+✅ you understand what data is collected and why;
+✅ you agree to the terms of data processing.
